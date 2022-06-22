@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Ceviche+One&family=Work+Sans:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
+header{
+    text-align: center;
+    margin: 2vw;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+.content .member_content{
+    width: 20%;
+    height: 50vh;
+    background-color: green;
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+}
+.content .member_content img{
+    width: 100%;
+    height: 50vh;
+}
+.content .member_content .name{
+    width: 90%;
+    margin: auto;
+    height:110px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    left: -300px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.content .member_content:hover .name{
+    bottom: 10px;
+    left: 10px;
+}
+.content .member_content .name h2{
+    color: black;
+    padding-top: 6px ;
+
+}
+.content .member_content .name p{
+    color:red;
+}
+.member_content .icon{
+   background-image:linear-gradient(to right,rgb(239,127,46),#f74f7f) ;
+   /*background-color: black;
+   */width: 150px;
+   height: 50px;
+   color:white;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   position: absolute;
+   top: -50px;
+   left: 25%;
+   transition:0.4s all ;
+   -webkit-transition:0.4s all ;
+   -moz-transition:0.4s all ;
+   -ms-transition:0.4s all ;
+   -o-transition:0.4s all ;
+}
+.member_content .icon i{
+   padding: 12px 10px;
+
+}
+.content .member_content:hover .icon{
+    top:0px;
+    left: 25%;
+}
+
